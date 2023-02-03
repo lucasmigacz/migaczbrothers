@@ -1,0 +1,59 @@
+
+  .navbar {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+  }
+
+  .buttonSwitchTheme {
+    border-radius: 2px;
+    background: #00796b;
+    padding: 5px 24px;
+    color: #FFFFFF;
+    border: none;
+    transition: .2s;
+    cursor: pointer;
+    }
+  .buttonSwitchTheme:hover {
+    background: #01564c;
+    color: #f4eaea;
+  }
+  
+  .navItems > .navItem , .navItems > .navContact {
+    margin: 0 15px;
+    color: #FFFFFF;
+    font-size: 13px;
+    transition: 0.2s;
+    padding: 4px;
+  }
+  
+  .navItems > .navContact {
+    border: none;
+    background-color: #00796b;
+    padding: 7px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #navButton {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: 1113px){
+    #navButton {
+      display: block;
+    }
+    .navItems {
+      display: none;
+    }
+    .logoNav {
+      margin: 0 auto;
+    }
+}

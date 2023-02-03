@@ -1,129 +1,410 @@
-.container {
-  padding: 0 2rem;
+
+
+
+@media (max-width: 1113px){
+
+  .firstContentImage {
+    display: none;
+  }
+
+  .firstContentText {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .aboutUsContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutUsContentImage {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .aboutUsContentText {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .cardsAgency {
+    flex-direction: column;
+  }
+
+  .cardsAgencyText {
+    width: 30%;
+  }
+  .cardsAgencyText h3 {
+   font-size: 30px !important; 
+  }
+  .cardsAgencyText p {
+   font-size: 14px !important; 
+  }
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.navItems > .navItem:hover {
+  background: rgba(43, 40, 40, 0.39);
+}
+
+.firstContainer {
+  background: #161616;
+  height: 500px;
+  display: flex;
+  padding: 0 20px;
+}
+
+.firstContentText .FaArrowRight {
+  color: #00796b;
+
+}
+
+.firstContent .FaSmileBeam {
+  color: orange;
+}
+
+.firstContentText {
   display: flex;
   flex-direction: column;
+  gap: 30px;
   justify-content: center;
-  align-items: center;
 }
 
-.footer {
+.firstContent {
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
+  justify-content: space-between;
+  color: white;
   align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
+.firstContent .linksFirstContent {
+  color: white;
   text-decoration: underline;
+  font-size: 14px;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+.firstContent .welcome {
+  color: #00796b;
 }
 
-.title,
-.description {
+.firstContent .welcome , .firstContent .linksFirstContent {
+  font-size: 12px;
+}
+
+.firstContent h1 {
+  font-size: 54px;
+}
+
+.firstContent .hwhite {
+  color: white;
+}
+
+.firstContent .hgreen {
+  color: #00796b;
+}
+
+.aboutUsContent .aboutUsButton {
+  border: none;
+  background-color: #00796b;
+  padding: 6px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  max-width: 200px;
+  margin-top: 10px;
+}
+
+.aboutUs {
+  background: #242424;
+  color: white;
+  padding: 0 20px;
+}
+
+.aboutUsContent {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  padding-top: 100px;
+  justify-content: space-between;
+}
+
+.AboutUsImage {
+  display: flex;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+
+.aboutUsContentText {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 15px;
+  line-height: 1.25;
+}
+
+.aboutUsContentText > p {
+  color: #cdd1d6;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+}
+
+.aboutUsContentText > h2 {
+  color: #cdd1d6;
+  font-size: 40px;
+  letter-spacing: 0.4px;
+  font-weight: 100;
+}
+
+.agencyContainer {
+  background-color: #242424;
+}
+
+.agencyContent {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 170px;
+}
+
+.weTake {
+  text-align: center;
+  color: #cdd1d6;
+  font-size: 40px;
+  font-weight: 200;
+  margin: 0 auto 70px auto;
+}
+
+
+
+.agencyContentText > h1 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 15%;
+}
+.agencyContentText > p {
+  color: white;
+  font-size: 20px;
   text-align: center;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+
+
+.gradientAgency {
+  background-image: linear-gradient(270.08deg, rgb(0, 121, 107) 52.27%, rgb(0, 77, 59) 99.93%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.cardsAgency {
   display: flex;
+  text-align: center;
+  color: #cdd1d6;
+  padding: 0 20px
+}
+
+.imageAgency {
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  transition: .4s;
+}
+
+.imageAgency:hover {
+  transform: scale(1.05);
+}
+
+.cardsAgencyText p {
+  font-size: 19px;
+}
+
+.cardsAgencyText h3 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.cardsAgencyText {
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 290px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.cardsAgencyText .servicesSpacing {
+  letter-spacing: 8px;
+  font-size: 14px; 
+}
+
+.paymentMethodsContainer {
+  background: #161616;
+}
+
+.paymentMethodsContent {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background: #101010;
+  padding: 200px;
+  font-size: 18px;
+  color: #E4E4E4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .agencyCustom {
+  width: 800px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../public/customdesign.png");
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 85px;
+}
+.agencyDevelopment {
+  width: 800px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../public/development.png");
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 85px;
+}
+.agencyMaintenence {
+  width: 800px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../public/maintenence.png");
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 85px;
+}
+
+.agencyCustomContent {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  text-align: center;
+}
+.agencyDevelopmentContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.agencyMaintenenceContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.servicesAgency {
+  letter-spacing: 8px;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.imagesAgency h1 {
+  color: white;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
+.imagesAgency p , .imagesAgency .servicesAgency {
+  color: #cdd1d6;
+  max-width: 70%;
+} */
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
-}
